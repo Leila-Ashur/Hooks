@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import Products from './Products';
 import Navbar from './Navbar';
 import './App.css';
@@ -13,11 +13,10 @@ function App() {
     <Navbar/>
     <BrowserRouter>
     <Routes>
-      <Route path='/home'element={<Products />}/>
-      <Route path='/home'element={<Products />}/>
-      <Route path='/about'element={<Products />}/>
+      <Route index element ={<Products/>}/>
       <Route path='/login'element={<Login/>}/>
-      <Route path ='/Products:productId'element={<ProductDetails/>}/>
+     < Route path='/Product' element={<Products/>}/>
+      <Route path ='/productsdetails/:productId'element={<ProductDetails/>}/>
       <Route path='/AddProducts'element={<Form/>}/>
      
       

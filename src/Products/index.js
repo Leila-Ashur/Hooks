@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import './Style.css';
+import '../ProductDetails/index'
 
 const Products = () => {
   const [products, setProducts] = useState([]);
@@ -38,7 +39,7 @@ const Products = () => {
             <h3 className="product-title">{item.title}</h3>
             <p className="product-price">Ksh {item.price}</p>
             <p className="product-discount">{item.discountPercentage}%</p>
-            <Link to={`/Product/${item.id}`}>
+            <Link to={`/productsdetails/${item.id}`} key={item.id}>
               <button className="details-button">See product details</button>
             </Link>
           </div>

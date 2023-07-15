@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import './style.css'
+import { Link } from "react-router-dom";
 const Login=()=>{
     const[username,setUsername]=useState('');
     const[password,setPassward]=useState('')
@@ -39,7 +40,9 @@ const Login=()=>{
                 onChange={(e)=>{setPassward(e.target.value)}}/>
                 <br/>
               <br/>
-                <button>Login</button>
+             
+                <button><Link to="/Product">Login</Link></button>
+                
             </form>
         </div>
     )
