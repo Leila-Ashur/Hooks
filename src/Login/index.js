@@ -41,7 +41,7 @@ const Login=()=>{
                 <br/>
               <br/>
              
-                <button><Link to="/Product">Login</Link></button>
+                <button  className="btn"><Link to="/Product">Login</Link></button>
                 
             </form>
         </div>

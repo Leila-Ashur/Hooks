@@ -31,6 +31,9 @@ const Products = () => {
 
   return (
     <div className="products-container">
+         <Link to="/AddProducts">
+            <button className="add-button">Add products</button>
+          </Link>
       {products.map((item) => (
         <div key={item.id} className="product-item">
           <img className="product-image" alt="" src={item.images[1]} />
@@ -44,9 +47,6 @@ const Products = () => {
             </Link>
           </div>
 
-          <Link to="/AddProducts">
-            <button className="add-button">Add products</button>
-          </Link>
         </div>
       ))}
     </div>

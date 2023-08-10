@@ -1,0 +1,41 @@
+.productDetails {
+    text-align: center;
+    
+  }
+  
+  .dt {
+    color: #333;
+  }
+  
+  .productContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .productName {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .productDescription {
+    margin-top: 10px;
+  }
+  
+  .productBrand {
+    margin-top: 5px;
+  }
+  
+  .productPrice {
+    margin-top: 5px;
+  }
+  
+  .productRatings {
+    margin-top: 10px;
+  }
+  
+  .productStock {
+    margin-top: 5px;
+  }
+  

@@ -1,9 +1,12 @@
 
 
 .navbar {
-  background-color: #f2f2f2;
+  background-color: #e7d6d6;
   padding: 10px;
   border-bottom: 1px solid #ccc;
+  padding-left: 40em;
+  
+  
 }
 
 .navbar-list {
@@ -11,10 +14,15 @@
   margin: 0;
   padding: 0;
   display: flex;
+  gap: 8em;
+  
 }
 
 .navbar-list li {
   margin-right: 10px;
+  
+  
+
 }
 
 .navbar-list li a {
@@ -22,6 +30,9 @@
   color: #333;
   font-weight: bold;
   padding: 5px;
+ 
+ 
+ 
 }
 
 .navbar-list li a:hover {

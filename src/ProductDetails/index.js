@@ -1,9 +1,12 @@
-import {  useEffect,useState} from 'react';
-import {  useParams} from "react-router-dom";
+import { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
+import './style.css';
 
-const ProductDetails=()=>{
-    const { productId } = useParams();
+
+const ProductDetails = () => {
+  const { productId } = useParams();
   const [product, setProduct] = useState();
+
   useEffect(() => {
     const getProductDetails = async () => {
       try {
@@ -16,22 +19,25 @@ const ProductDetails=()=>{
     };
     getProductDetails();
   }, [productId]);
+
   if (!product) {
     return <p>Loading product details...</p>;
   }
+
   return (
-    <div className='productDetails'>
-      <h1 className='dt'>ProductDetails</h1>
-      <div >
+    <div className="productDetails">
+      <h1 className="dt">Product Details</h1>
+      <div className="productContainer">
         <img src={product.thumbnail} alt={product.title} />
-        <h2>name:{product.title}</h2>
-        <p>Description:{product.description}</p>
-        <p>Brand:{product.brand}</p>
-        <p>Price:{product.price}</p>
-        <h4>Ratings:{product.rating}</h4>
-        <h4>Stock:{product.stock}</h4>
+        <h2 className="productName">Name: {product.title}</h2>
+        <p className="productDescription">Description: {product.description}</p>
+        <p className="productBrand">Brand: {product.brand}</p>
+        <p className="productPrice">Price: {product.price}</p>
+        <h4 className="productRatings">Ratings: {product.rating}</h4>
+        <h4 className="productStock">Stock: {product.stock}</h4>
       </div>
     </div>
   );
 };
+
 export default ProductDetails;
